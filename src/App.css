@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+*{
+  font-family: 'Neucha', cursive;
+  font-size: larger;
+}
+
+.AppCss{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TitleCss{
+  position: fixed;
+  text-align: center;
+}
+
+.emptyBox{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 2px solid black;
+  background-image: linear-gradient(to top, black , gray);
+}
