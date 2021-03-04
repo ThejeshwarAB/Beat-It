@@ -14,9 +14,9 @@ function Image(props) {
     }
 
     return (
-        <div> 
+        <span>
             {content}
-        </div>
+        </span>
     );
 }
 
