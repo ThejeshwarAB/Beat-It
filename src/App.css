@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 *{
-  font-family: 'Neucha', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: larger;
+  background-color: lightgreen;
 }
 
 .AppCss{
@@ -15,6 +16,30 @@
 .TitleCss{
   position: fixed;
   text-align: center;
+}
+
+/* .HomeCss, .GameCss{
+  padding: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+} */
+
+.linkCss{
+  padding: 15px;
+  font-size: 30px;
+}
+
+.listCss{
+  text-align: center;
+  font-size: 35px;
+  padding: 50px;
+  list-style-type: none;
+}
+
+.imageCss{
+  width: 125px;
+  margin-top: -15px;
+  background-color: transparent;
 }
 
 .emptyBox{

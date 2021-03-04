@@ -1,16 +1,38 @@
-import React from 'react';
-import { Link, 
-    Switch, 
-    Router } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {
+  Link,
+  Switch,
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './App.css';
 import Home from './Views/Home';
 import Game from './Views/Game';
 
 function App() {
+
   return (
-    <div className="text-center AppCss">
-      <Home />
-      <Game />
+    <div>
+      <Router>
+
+        <Switch>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/game">
+            <Game />
+          </Route>
+        </Switch>
+        <div className="text-center">
+          <Link to="/home" className="linkCss">
+            Home
+          </Link>
+          <Link to="/game" className="linkCss">
+            Game
+          </Link>
+        </div>
+      </Router>
+
     </div>
   );
 }

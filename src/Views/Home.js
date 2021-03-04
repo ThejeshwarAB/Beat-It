@@ -4,12 +4,13 @@ import {
     Container
 } from 'react-bootstrap';
 import Title from '../Components/Title';
+import About from '../Components/About';
 
-function Home(props) {
+function Home(pros) {
     return (
-        <Container>
+        <Container className="text-center HomeCss">
             <Title />
-            <Button variant="dark" style={{ fontSize: "25px" }}>Start game</Button>
+            <About />
         </Container>
     );
 }
