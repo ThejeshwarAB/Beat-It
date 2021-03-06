@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Beat-It/static/css/main.60df0135.chunk.css",
+    "main.js": "/Beat-It/static/js/main.627da8e6.chunk.js",
+    "main.js.map": "/Beat-It/static/js/main.627da8e6.chunk.js.map",
+    "runtime-main.js": "/Beat-It/static/js/runtime-main.da33b975.js",
+    "runtime-main.js.map": "/Beat-It/static/js/runtime-main.da33b975.js.map",
+    "static/css/2.658248ec.chunk.css": "/Beat-It/static/css/2.658248ec.chunk.css",
+    "static/js/2.d752a423.chunk.js": "/Beat-It/static/js/2.d752a423.chunk.js",
+    "static/js/2.d752a423.chunk.js.map": "/Beat-It/static/js/2.d752a423.chunk.js.map",
+    "static/js/3.52be35ea.chunk.js": "/Beat-It/static/js/3.52be35ea.chunk.js",
+    "static/js/3.52be35ea.chunk.js.map": "/Beat-It/static/js/3.52be35ea.chunk.js.map",
+    "index.html": "/Beat-It/index.html",
+    "static/css/2.658248ec.chunk.css.map": "/Beat-It/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.60df0135.chunk.css.map": "/Beat-It/static/css/main.60df0135.chunk.css.map",
+    "static/js/2.d752a423.chunk.js.LICENSE.txt": "/Beat-It/static/js/2.d752a423.chunk.js.LICENSE.txt",
+    "static/media/Mole.0fd6d92d.png": "/Beat-It/static/media/Mole.0fd6d92d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da33b975.js",
+    "static/css/2.658248ec.chunk.css",
+    "static/js/2.d752a423.chunk.js",
+    "static/css/main.60df0135.chunk.css",
+    "static/js/main.627da8e6.chunk.js"
+  ]
+}
