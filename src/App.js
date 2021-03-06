@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Link,
   Switch,
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import './App.css';
 import Home from './Views/Home';
@@ -17,7 +18,7 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-              <Home />
+            <Redirect to="/home" />
           </Route>
           <Route path="/home">
             <Home />
