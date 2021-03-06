@@ -2,4 +2,4 @@
 
 Game deployed at:
 
-https://thejeshwarab.github.io/home
+https://thejeshwarab.github.io/Beat-It/
