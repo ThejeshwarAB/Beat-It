@@ -11,19 +11,64 @@ import { Random } from 'react-lodash';
 
 function Game(props) {
 
-    const [counter, setCounter] = useState(15);
+    function refresh() {
+        window.location.reload(false);
+      }
 
-    useEffect(() => {
-        counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
-    }, [counter]);
+    const [counter, setCounter] = useState(15);
 
     const [score, setScore] = useState(0);
 
     const [random, setRandom] = useState(15);
 
     useEffect(() => {
+        counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+    }, [counter]);
+
+    useEffect(() => {
         counter > 0 && setTimeout(() => setRandom(Math.floor((Math.random() * (9 - 1) + 1))), 1000);
     }, [random]);
+
+    let content = <div><h3 className="p-5 text-danger" onClick={refresh}>You scored: {score} / 15 <br/>Play another game</h3></div>;
+
+    if (counter) {
+        content = 
+            <div>
+                <Row>
+                    <Col className="emptyBox" key='1'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={1} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='2'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={2} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='3'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={3} counter={counter} />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="emptyBox" key='4'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={4} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='5'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={5} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='6'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={6} counter={counter} />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="emptyBox" key='7'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={7} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='8'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={8} counter={counter} />
+                    </Col>
+                    <Col className="emptyBox" key='9'>
+                        <Image random={random} score={score} setScore={setScore} keyValue={9} counter={counter} />
+                    </Col>
+                </Row>
+            </div>;
+    }
 
     return (
         <Container className="text-center GameCss">
@@ -32,40 +77,7 @@ function Game(props) {
                 <Timer counter={counter} />
                 <Score score={score} />
             </div>
-            <Row>
-                <Col className="emptyBox" key='1'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={1} />
-                </Col>
-                <Col className="emptyBox" key='2'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={2} />
-                </Col>
-                <Col className="emptyBox" key='3'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={3} />
-                </Col>
-            </Row>
-            <Row>
-                <Col className="emptyBox" key='4'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={4} />
-                </Col>
-                <Col className="emptyBox" key='5'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={5} />
-                </Col>
-                <Col className="emptyBox" key='6'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={6} />
-                </Col>
-            </Row>
-            <Row>
-                <Col className="emptyBox" key='7'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={7} />
-                </Col>
-                <Col className="emptyBox" key='8'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={8} />
-                </Col>
-                <Col className="emptyBox" key='9'>
-                    <Image random={random} score={score} setScore={setScore} keyValue={9} />
-                    {/* <img src={Image} alt="Mole" className="imageCss" onClick={()=>setScore(score+1)} /> */}
-                </Col>
-            </Row>
+            {content}
         </Container>
     );
 }

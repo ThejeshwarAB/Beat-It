@@ -31,20 +31,24 @@
 
 .listCss{
   text-align: center;
-  font-size: 35px;
-  padding: 50px;
+  font-size: 20px;
+  padding: 0px;
+  /* padding-top: 0px; */
   list-style-type: none;
+  /* text-decoration: underline; */
+  text-transform: capitalize;
 }
 
 .imageCss{
-  width: 125px;
-  margin-top: -15px;
+  width: 100px;
+  margin-top: -75px;
   background-color: transparent;
+  background: none;
 }
 
 .emptyBox{
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   margin: 10px;
   border: 2px solid black;
